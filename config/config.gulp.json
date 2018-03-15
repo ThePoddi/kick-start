@@ -1,0 +1,53 @@
+{
+  "paths": {
+    "watch": "assets/src/**/*",
+    "styles": {
+      "styl": {
+        "files": [
+          "assets/src/css/styl/**/*.styl",
+          "!assets/src/css/styl/components/**/*.styl",
+          "!assets/src/css/styl/elements/**/*.styl"
+        ],
+        "includePath": ["node_modules/normalize-styl"],
+        "dist": "assets/dist/css"
+      },
+      "scss": {
+        "files": [
+          "assets/src/css/scss/**/*.scss",
+          "!assets/src/css/scss/components/**/*.scss"
+        ],
+        "includePath": ["node_modules/normalize.css"],
+        "dist": "assets/dist/css"
+      }
+    },
+    "scripts": {
+      "js": {
+        "files": [
+          "assets/src/js/**/*.js",
+          "!assets/src/js/vendors/*"
+        ],
+        "dist": "assets/dist/js"
+      }
+    },
+  	"assets": {
+      "img": {
+        "files": [ "assets/src/img/**/*" ],
+        "dist": "assets/dist/img"
+      },
+      "fonts": {
+        "files": [
+          "assets/src/fonts/**/*",
+          "node_modules/font-awesome/fonts/*"
+        ],
+        "dist": "assets/dist/fonts"
+      }
+  	}
+  },
+  "options": {
+    "browsersync": {
+      "server": true,
+      "host": "localhost",
+      "open": "external"
+  	}
+  }
+}
