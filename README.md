@@ -1,5 +1,5 @@
-# kick-start
-Easy project kick-start for small web projects.
+# kickstart
+Easy project kickstart for small web projects.
 
 ## Scripts
 - `npm run build` Compile and minify all assets. Uses styl, js and img and fonts tasks.
