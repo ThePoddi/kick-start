@@ -1,4 +1,9 @@
-.DS_Store
 node_modules
-/assets/dist/*
+*.log
+.DS_Store
 package-lock.json
+
+public/assets/img
+public/assets/js
+public/assets/css
+public/assets/maps
