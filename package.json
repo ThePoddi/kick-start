@@ -1,39 +1,36 @@
 {
-  "name": "kick-start",
-  "version": "1.0.0",
-  "description": "Easy project kick-start for small web projects.",
-  "main": "index.js",
+  "name": "kickstart",
+  "version": "1.1.0",
+  "description": "Easy project kickstart for web projects.",
+  "main": "scripts/gulpfile.js",
   "scripts": {
-    "styl": "gulp --gulpfile scripts/gulpfile.js --cwd . styl",
-    "js": "gulp --gulpfile scripts/gulpfile.js --cwd . js",
-    "img": "gulp --gulpfile scripts/gulpfile.js --cwd . img",
-    "fonts": "gulp --gulpfile scripts/gulpfile.js --cwd . fonts",
-    "sync": "gulp --gulpfile scripts/gulpfile.js --cwd . sync",
-    "build": "npm run styl & npm run js & npm run img & npm run fonts"
+    "gulp": "gulp --gulpfile scripts/gulpfile.js --cwd ./"
   },
   "author": "Patrick Schumacher <hello@thepoddi.com>",
   "license": "ISC",
   "browserslist": [
-    "> 1%",
+    "> 5%",
     "last 2 versions"
   ],
   "devDependencies": {
-    "browser-sync": "^2.23.6",
-    "font-awesome": "^4.7.0",
+    "browser-sync": "^2.24.6",
+    "config.json": "0.0.4",
+    "del": "^3.0.0",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^5.0.0",
-    "gulp-clean-css": "^3.9.3",
+    "gulp-clean-css": "^3.10.0",
     "gulp-concat": "^2.6.1",
     "gulp-imagemin": "^4.1.0",
-    "gulp-notify": "^3.2.0",
+    "gulp-noop": "^1.0.0",
+    "gulp-plumber": "^1.2.0",
+    "gulp-rename": "^1.4.0",
     "gulp-sourcemaps": "^2.6.4",
     "gulp-stylus": "^2.7.0",
-    "gulp-uglify": "^3.0.0",
+    "gulp-uglify": "^3.0.1",
+    "gulp-webp": "^3.0.0",
     "normalize-styl": "^4.1.1",
-    "normalize.css": "^8.0.0"
-  },
-  "dependencies": {
-    "config.json": "0.0.4"
+    "require-dir": "^1.0.0",
+    "run-sequence": "^2.2.1"
   },
   "repository": {
     "type": "git",

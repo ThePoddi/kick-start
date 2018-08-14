@@ -1,53 +1,47 @@
 {
   "paths": {
-    "watch": "assets/src/**/*",
     "styles": {
-      "styl": {
-        "files": [
-          "assets/src/css/styl/**/*.styl",
-          "!assets/src/css/styl/components/**/*.styl",
-          "!assets/src/css/styl/elements/**/*.styl"
-        ],
-        "includePath": ["node_modules/normalize-styl"],
-        "dist": "assets/dist/css"
-      },
-      "scss": {
-        "files": [
-          "assets/src/css/scss/**/*.scss",
-          "!assets/src/css/scss/components/**/*.scss"
-        ],
-        "includePath": ["node_modules/normalize.css"],
-        "dist": "assets/dist/css"
-      }
+      "source": "./source/styles/*.styl",
+      "dest": "./public/assets/css/",
+      "includePath": [
+        "./node_modules/normalize-styl"
+      ]
     },
     "scripts": {
-      "js": {
-        "files": [
-          "assets/src/js/**/*.js",
-          "!assets/src/js/vendors/*"
-        ],
-        "dist": "assets/dist/js"
-      }
+      "source": "./source/scripts/*.js",
+      "dest": "./public/assets/js/"
     },
-  	"assets": {
-      "img": {
-        "files": [ "assets/src/img/**/*" ],
-        "dist": "assets/dist/img"
-      },
-      "fonts": {
-        "files": [
-          "assets/src/fonts/**/*",
-          "node_modules/font-awesome/fonts/*"
-        ],
-        "dist": "assets/dist/fonts"
-      }
-  	}
+    "images": {
+      "source": "./source/images/**/*",
+      "dest": "./public/assets/img/"
+    },
+    "fonts": {
+      "source": "./source/fonts/**/*.{ttf,otf}",
+      "dest": "./public/assets/fonts/"
+    },
+    "sourcemaps": {
+      "dest": "./public/assets/maps/",
+      "write": "../maps"
+    },
+    "watch": {
+      "styles": "./source/styles/**/*.{css,styl}",
+      "scripts": "./source/scripts/**/*.js",
+      "images": "./source/images/**/*.*",
+      "livereload": "./public/*.{js,html,php}"
+    }
   },
-  "options": {
-    "browsersync": {
-      "server": true,
-      "host": "localhost",
-      "open": "external"
-  	}
+  "run": {
+    "development": {
+      "uglify": false,
+      "cleancss": false,
+      "sourcemaps": true,
+      "autoprefixer": true
+    },
+    "production": {
+      "uglify": true,
+      "cleancss": true,
+      "sourcemaps": false,
+      "autoprefixer": true
+    }
   }
 }
