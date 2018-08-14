@@ -1,7 +1,7 @@
 # kickstart
 Easy project kickstart for web projects.
 
-## SCripts / Gulp Tasks
+## Scripts / Gulp Tasks
 - `npm run gulp` Default gulp task. Clean assets, build files, watch and sync.
 - `npm run gulp build` Compile and minify all assets. 
 - `npm run gulp clean` Clean assets files.
